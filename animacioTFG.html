@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<hedad>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://use.fontawesome.com/295f07b527.js"></script>
+    <link rel="stylesheet" href="styles-animations.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+    <title>Animation edCrumble</title>
+
+</hedad>
+
+<body>
+    <button class="muteButton"><i class="fa fa-volume-up muteIcon"></i></button>
+    <button class="playButton"><i class="fa fa-play fa-5x"></i></button>
+
+    <section class="timelineSections" id="section-title">
+        <h1 class="h1-title">Design title</h1>
+        <h2 class="h2-title">By Author</h2>
+
+        <section class="section-title" id="columns-title">
+            <div class="div-title"></div>
+            <div class="div-title"></div>
+            <div class="div-title"></div>
+            <div class="div-title"></div>
+            <div class="div-title"></div>
+            <div class="div-title"></div>
+            <div class="div-title"></div>
+            <div class="div-title"></div>
+            <div class="div-title"></div>
+            <div class="div-title"></div>
+        </section>
+    </section>
+
+    <section class="timelineSections" id="section-description">
+        <h1 class="h1-description" tr-text="title-description">Description</h1>
+        <h2 class="h2-description"></h2>
+
+        <section class="section-description" id="columns-description">
+            <div class="div-description"></div>
+            <div class="div-description"></div>
+            <div class="div-description"></div>
+            <div class="div-description"></div>
+            <div class="div-description"></div>
+            <div class="div-description"></div>
+            <div class="div-description"></div>
+            <div class="div-description"></div>
+            <div class="div-description"></div>
+            <div class="div-description"></div>
+        </section>
+    </section>
+
+    <section class="timelineSections" id="section-generalInfo">
+        <h1 class="h1-general" tr-text="title-generalInfo">General information</h1>
+        <div class="container-general">
+            <i class="img-general fa fa-users fa-4x" aria-hidden="true"></i>
+            <i class="img-general fa fa-clock-o fa-4x" aria-hidden="true"></i>
+            <i class="img-general fa fa-pencil-square-o fa-4x" aria-hidden="true"></i>
+            <i class="img-general fa fa-graduation-cap fa-4x" aria-hidden="true"></i>
+            <div class="containerInfo-general">
+                <p class="p-general" tr-text="students-generalInfo">Number of students: </p>
+                <p class="p-general" id="general1">
+                    <highlight>XX</highlight>
+                </p>
+            </div>
+            <div class="containerInfo-general">
+                <p class="p-general" tr-text="length-generalInfo">Length: </p>
+                <p class="p-general" id="general2">
+                    <highlight>X</highlight>
+                </p>
+                <p class="p-general">
+                    <highlight tr-text="days-generalInfo"> days</highlight>
+                </p>
+            </div>
+            <div class="containerInfo-general">
+                <p class="p-general" tr-text="topic-generalInfo">Topic: </p>
+                <p class="p-general" id="general3">
+                    <highlight></highlight>
+                </p>
+            </div>
+            <div class="containerInfo-general">
+                <p class="p-general" tr-text="level-generalInfo">Education level: </p>
+                <p class="p-general" id="general4">
+                    <highlight></highlight>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="timelineSections" id="section-objectives">
+        <div class="inlineContainer">
+            <h2 class="h2-objectives" tr-text="title-objectives">Learning Objectives</h2>
+            <h2 class="h2-objectives"> (</h2>
+            <h2 class="h2-objectives">
+                <highlight>X</highlight>
+            </h2>
+            <h2 class="h2-objectives"> </h2>
+            <h2 class="h2-objectives" tr-text="total-objectives">in total</h2>
+            <h2 class="h2-objectives">)</h2>
+        </div>
+        <div id="objectivesContainer"></div>
+    </section>
+
+    <section class="timelineSections" id="section-evaluation">
+        <h1 class="h1-evaluation" tr-text="title-evaluation">Students evaluation in the lesson plan:</h1>
+        <div class="container-evaluation">
+            <i class="img-evaluation fa fa-file-text-o fa-5x" aria-hidden="true"></i>
+            <p class="p-evaluation"></p>
+        </div>
+
+        <section class="section-evaluation-1">
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+        </section>
+        <section class="section-evaluation-2">
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+        </section>
+        <section class="section-evaluation-3">
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+        </section>
+        <section class="section-evaluation-2">
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+        </section>
+        <section class="section-evaluation-3">
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+            <div class="dot" id="dotEvaluation"></div>
+        </section>
+    </section>
+
+    <section class="timelineSections" id="section-resourcesBig">
+        <section class="section-resources">
+            <div id="resources-title">
+                <h1 class="h1-resources" tr-text="title-resources">In this course there are a total of </h1>
+                <h1 class="h1-resources">
+                    <highlight id="highlight">XX</highlight>
+                </h1>
+                <h1 class="h1-resources">
+                    <highlight tr-text="resources-resources"> resources</highlight>
+                </h1>
+            </div>
+            <div class="container-resources">
+                <div id="subtitle-resources">
+                    <h2 class="h2-resources" tr-text="mostUsed-resources">The resource most used in the course is </h2>
+                    <h2 class="h2-resources">
+                        <highlight>Text File</highlight>
+                    </h2>
+                </div>
+                <h3 class="h3-resources" tr-text="types-resources">Here you can see the types of the resources used in
+                    the course</h3>
+                <section class="section-1-resources">
+                    <div class="line" id="column1" style="margin-left:0vh">3</div>
+                    <div class="line" id="column2" style="margin-left:13vh">2</div>
+                    <div class="line" id="column3" style="margin-left:26vh">3</div>
+                    <div class="line" id="column4" style="margin-left:39vh">5</div>
+                    <div class="line" id="column5" style="margin-left:52vh">4</div>
+                    <div class="line" id="column6" style="margin-left:65vh">2</div>
+                </section>
+                <section class="section-2-resources">
+                    <p class="p-resources" id="name1" tr-text="files-resources">Files</p>
+                    <p class="p-resources" id="name2" tr-text="apps-resources">Apps</p>
+                    <p class="p-resources" id="name3" tr-text="phisical-resources">Phisical</p>
+                    <p class="p-resources" id="name4" tr-text="comm-resources">Comm</p>
+                    <p class="p-resources" id="name5" tr-text="social-resources">Social</p>
+                    <p class="p-resources" id="name6" tr-text="moocs-resources">MOOC's</p>
+                </section>
+            </div>
+        </section>
+    </section>
+
+    <section class="timelineSections" id="section-timeline">
+        <div id="title-timeline">
+            <h1 class="h1-timeline" tr-text="title-timline">The number of activities for this course is </h1>
+            <h1 class="h1-timeline">
+                <highlight>X</highlight>
+            </h1>
+        </div>
+        <div id="subtitle-timeline">
+            <h2 class="h2-timeline">
+                <highlight id="inClass">X</highlight>
+            </h2>
+            <h2 class="h2-timeline" tr-text="inClass-timline"> in class</h2>
+            <h2 class="h2-timeline">
+                <div class=orange></div> /
+            </h2>
+            <h2 class="h2-timeline">
+                <highlight id="outClass">X</highlight>
+            </h2>
+            <h2 class="h2-timeline" tr-text="outClass-timline"> out of class</h2>
+            <h2 class="h2-timeline">
+                <div class=blue></div>
+            </h2>
+        </div>
+        <h3 class="h3-timeline" tr-text="subtitle-timline">Timeline of the course</h3>
+        <section id="timelineSection1" class="timeline"></section>
+    </section>
+
+    <section class="timelineSections" id="section-experience">
+        <h1 class="h1-experience" tr-text="title-experience">Testimonial of implementing the lesson plan:</h1>
+        <p class="p-experience"></p>
+
+        <section class="section-experience-1">
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+        </section>
+
+        <section class="section-experience-2">
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+        </section>
+        <section class="section-experience-3">
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+        </section>
+        <section class="section-experience-2">
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+        </section>
+        <section class="section-experience-3">
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+            <div class="dot" id="dotExperience"></div>
+        </section>
+    </section>
+
+    <section class="timelineSections" id="section-statistics">
+        <h1 class="h1-statistics" tr-text="title-statistics">Here you have some statistics of the course</h1>
+        <div class="graphicsContainer">
+            <div class="firstStat">
+                <h2 class="h2-statistics" tr-text="inout-statistics">In and out class activities</h2>
+                <div class="div-general">
+                    <i class="icons-statistics fa fa-institution fa-sm" aria-hidden="true"
+                        style="background-color:#0e1c55; color:#ffffff"></i>
+                    <div class="div-statistics" id="row1">100%</div>
+                    <div class="statisticsText" tr-text="in-statistics">In</div>
+                </div>
+                <div class="div-general">
+                    <i class="icons-statistics fa fa-home" aria-hidden="true" style="background-color:#a8e0e3"></i>
+                    <div class="div-statistics" id="row2">100%</div>
+                    <div class="statisticsText" tr-text="out-statistics">Out</div>
+                </div>
+            </div>
+            <div class="secondStat">
+                <h2 class="h2-statistics" tr-text="grade-statistics">Grade form</h2>
+                <div class="div-general">
+                    <i class="icons-statistics fa fa-pencil-square-o" aria-hidden="true"
+                        style="background-color:#e92416"></i>
+                    <div class="div-statistics" id="row3">100%</div>
+                    <div class="statisticsText" tr-text="graded-statistics">Graded</div>
+                </div>
+                <div class="div-general">
+                    <i class="icons-statistics fa fa-pencil-square" aria-hidden="true"
+                        style="background-color: #f27970"></i>
+                    <div class="div-statistics" id="row4">100%</div>
+                    <div class="statisticsText" tr-text="selfGraded-statistics">Self graded</div>
+                </div>
+                <div class="div-general">
+                    <i class="icons-statistics fa fa-square-o" aria-hidden="true" style="background-color: #fcdedc"></i>
+                    <div class="div-statistics" id="row5">100%</div>
+                    <div class="statisticsText" tr-text="notGraded-statistics">Not graded</div>
+                </div>
+            </div>
+            <div class="thirdStat">
+                <h2 class="h2-statistics" tr-text="teacherPresence-statistics">Teacher Presence</h2>
+                <div class="div-general">
+                    <i class="icons-statistics fa fa-ban" aria-hidden="true" style="background-color:#ffefd8"></i>
+                    <div class="div-statistics" id="row6">100%</div>
+                    <div class="statisticsText" tr-text="notPresent-statistics">Not present</div>
+                </div>
+                <div class="div-general">
+                    <i class="icons-statistics fa fa-laptop" aria-hidden="true" style="background-color:#ffc876"></i>
+                    <div class="div-statistics" id="row7">100%</div>
+                    <div class="statisticsText" tr-text="online-statistics">Online</div>
+                </div>
+                <div class="div-general">
+                    <i class="icons-statistics fa fa-graduation-cap" aria-hidden="true"
+                        style="background-color:#ff9900"></i>
+                    <div class="div-statistics" id="row8">100%</div>
+                    <div class="statisticsText" tr-text="present-statistics">Present</div>
+                </div>
+            </div>
+            <div class="fourthStat">
+                <h2 class="h2-statistics" tr-text="work-statistics">Collaborative / individual work</h2>
+                <div class="div-general">
+                    <i class="icons-statistics fa fa-user" aria-hidden="true" style="background-color:#bff9c3"></i>
+                    <div class="div-statistics" id="row9">100%</div>
+                    <div class="statisticsText" tr-text="individual-statistics">Individual</div>
+                </div>
+                <div class="div-general">
+                    <i class="icons-statistics fa fa-user-times" aria-hidden="true"
+                        style="background-color:#42ed4e"></i>
+                    <div class="div-statistics" id="row10">100%</div>
+                    <div class="statisticsText" tr-text="group-statistics">Group</div>
+                </div>
+                <div class="div-general">
+                    <i class="icons-statistics fa fa-users" aria-hidden="true" style="background-color:#10a91a"></i>
+                    <div class="div-statistics" id="row11">100%</div>
+                    <div class="statisticsText" tr-text="wholeClass-statistics">Whole Class</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="translations.js"></script>
+    <script src="scripts-animations.js"></script>
+    
+</body>
+
+</html>
